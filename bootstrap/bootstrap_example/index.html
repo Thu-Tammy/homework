@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This is an example using Bootstrap</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link href="./css/style.css" rel="stylesheet">
+</head>
+<body>
+ <div class="container">
+  <!--navigation-->
+  <nav class="navbar navbar-expand-sm bg-light navbar-light sticky-top">
+      <div class="container-fluid">
+          <a class="navbar-branch" href="#"> <!-- insert website logo-->
+            <img src="./images/logo.png" height="50">
+          </a>
+          <button class="navbar-toggler" type="button" data-toggler="collapse" data-target="#navbarResponsive">
+              <span class="navbar-toggler-icon"></span> <!--cho bieu tuong co 3 gach-->
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+              <ul class="navbar-nav ml-auto">
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Services</a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#">Glass Replacement</a>
+                      <a class="dropdown-item" href="#">Collision Repair</a>
+                      <a class="dropdown-item" href="#">Custom Upgrades</a>
+                    </div>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Team</a>
+                  </li>
+                </ul>
+          </div>
+      </div>
+  </nav>
+  <!--carousel-->
+  <div id="slides" class="carousel slide" data-ride="carousel">
+        <!-- Indicators --> <!--thanh nho duoi anh chi vi tri cua anh
+        -->
+        <ul class="carousel-indicators">
+            <li data-target="#slides" data-slide-to="0" class="active"></li>
+            <li data-target="#slides" data-slide-to="1"></li>
+            <li data-target="#slides" data-slide-to="2"></li>
+        </ul>
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./images/slide1.jpg" alt="Glass Replacement">
+            <div class="carousel-caption">
+              <h1 class="display-2">Glass Replacement</h1>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./images/slide2.jpg" alt="custom upgrades">
+          </div>
+          <div class="carousel-item">
+            <img src="./images/slide3.jpg" alt="collision repair">
+          </div>
+        </div>
+      
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#slides" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#slides" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+  </div>
+<!--jumbotron--> <!--dung de dua ra nhung thong diep marketting-->
+<div class="container-fluid">
+  <div class="jumbotron">
+    <dic class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-8">
+      <p> Welcome to ABC Inc., one of Calgary's top automotive company. <br>
+        We are is a Calgary automotive body shop specializing in the collision repairs of luxury import vehicles. We tend to damaged vehicles with care, expertise and an exacting attention to detail to restore your work of art to its original state of beauty.</p>
+    </dic>
+  </div>
+</div>
+<div class="container-fluid padding">
+  <div class="row welcome text-center">
+    <div class="col-12">
+      <h1 class="display-4"> Choose your service</h1>
+    </div>
+  <hr>
+    <div class="col-12">
+      <p> We are a certified body shop for top quality luxury vehicles. With the latest equipment, manufacturer’s technical support and using only genuine OEM parts, we restore your vehicle to the standards by which it was engineered and built. </p>
+      <p>We understand the value of your investment and take great pride in returning your vehicle to you, in pristine condition as though it were brand new.</p>
+    </div>
+  </div>
+</div>
+
+
+
+
+ </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
